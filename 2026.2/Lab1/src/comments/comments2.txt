@@ -1,0 +1,17 @@
+QUESTÃO 1:
+    Sim, as execuções estão ocorrendo de forma concorrente, como por exemplo o log de "FIM DO PROGRAMA JAVA" foi exibido antes mesmo de tudo acabar de rodar efetivamente.
+    Além disso, a verificação de cada recurso custou relativamente menos tempo que a execução sequencial.
+    Também teve uma modificação na saída, informando a qual thread o log pertence.
+
+QUESTÃO 2:
+    O log passou a apresentar o nome da thread que está executando naquele momento.
+    Com essa modificação, fica mais nítido qual thread faz o que.
+
+QUESTÃO 3:
+    Ela se comporta diferente do propósito esperado. Inicia corretamente,
+    mas finaliza logo após os logs de inicialização de outras threads, muito antes do esperado (ao fim do programa). 
+
+QUESTÃO 4:
+    Esse fluxo corrigiu o problema de finalizar a main antes das outras threads. 
+    Agora, a concorrência ficou apenas entre as outras threads, enquanto a main inicializou e ficou no aguardo das outras finalizarem.
+

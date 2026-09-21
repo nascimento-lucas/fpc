@@ -1,0 +1,6 @@
+Não houve alteração da ordem de execução. 
+Está executando a de forma serial, devido a isso, não existe como alterar a ordem de execução.
+1ª execução: 11199ms
+2ª execução: 8579ms
+3ª execução: 9199ms
+De acordo com as execuções, o minímo é de 8579ms e o máximo é de 11199ms. 
